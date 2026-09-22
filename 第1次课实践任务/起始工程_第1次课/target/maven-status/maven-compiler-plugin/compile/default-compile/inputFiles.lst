@@ -1,0 +1,10 @@
+D:\homework\软件开发框架与设计模式实践\forg\第1次课实践任务\起始工程_第1次课\src\main\java\edu\course\library\App.java
+D:\homework\软件开发框架与设计模式实践\forg\第1次课实践任务\起始工程_第1次课\src\main\java\edu\course\library\external\EmailNotificationSender.java
+D:\homework\软件开发框架与设计模式实践\forg\第1次课实践任务\起始工程_第1次课\src\main\java\edu\course\library\external\LegacySmsClient.java
+D:\homework\软件开发框架与设计模式实践\forg\第1次课实践任务\起始工程_第1次课\src\main\java\edu\course\library\external\SmsNotificationSender.java
+D:\homework\软件开发框架与设计模式实践\forg\第1次课实践任务\起始工程_第1次课\src\main\java\edu\course\library\model\BookCopy.java
+D:\homework\软件开发框架与设计模式实践\forg\第1次课实践任务\起始工程_第1次课\src\main\java\edu\course\library\model\BorrowRecord.java
+D:\homework\软件开发框架与设计模式实践\forg\第1次课实践任务\起始工程_第1次课\src\main\java\edu\course\library\model\User.java
+D:\homework\软件开发框架与设计模式实践\forg\第1次课实践任务\起始工程_第1次课\src\main\java\edu\course\library\repository\InMemoryDatabase.java
+D:\homework\软件开发框架与设计模式实践\forg\第1次课实践任务\起始工程_第1次课\src\main\java\edu\course\library\service\LibraryService.java
+D:\homework\软件开发框架与设计模式实践\forg\第1次课实践任务\起始工程_第1次课\src\main\java\edu\course\library\service\NotificationSender.java
