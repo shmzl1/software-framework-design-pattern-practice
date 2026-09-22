@@ -1,6 +1,6 @@
 package edu.course.library;
 import java.util.*;
-public class InMemoryDatabase {
+public class InMemoryDatabase implements BorrowRepository {
  private final Map<String,User> users=new HashMap<>();
  private final Map<String,BookCopy> books=new HashMap<>();
  private final Map<String,BorrowRecord> records=new HashMap<>();

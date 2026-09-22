@@ -1,7 +1,7 @@
 package edu.course.library;
 public class BorrowService {
- private final InMemoryDatabase database; private final LegacySmsClient smsClient;
- public BorrowService(InMemoryDatabase database,LegacySmsClient smsClient){this.database=database;this.smsClient=smsClient;}
+ private final BorrowRepository database; private final NotificationSender notificationSender;
+ public BorrowService(BorrowRepository database,NotificationSender notificationSender){this.database=database;this.notificationSender=notificationSender;}
  public void borrowBook(String userId,String bookId){
   User user=database.findUser(userId); if(user==null) throw new IllegalArgumentException("User not found");
   BookCopy book=database.findBook(bookId); if(book==null) throw new IllegalArgumentException("Book not found");
@@ -9,7 +9,7 @@ public class BorrowService {
   user.checkBorrowLimit(activeBorrowCount);
   book.borrow(); database.saveBook(book);
   database.saveBorrowRecord(new BorrowRecord(userId,bookId));
-  smsClient.sendText(user.getPhone(),"Borrow success: "+bookId,1);
+  notificationSender.send(user,"Borrow success: "+bookId);
  }
  public void returnBook(String userId,String bookId){
   BorrowRecord record=database.findBorrowRecord(userId,bookId);
