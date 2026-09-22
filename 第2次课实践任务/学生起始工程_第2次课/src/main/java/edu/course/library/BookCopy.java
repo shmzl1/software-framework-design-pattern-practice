@@ -4,4 +4,9 @@ public class BookCopy {
  public BookCopy(String id){this.id=id;}
  public String getId(){return id;} public boolean isAvailable(){return available;}
  public void setAvailable(boolean available){this.available=available;}
+ public void borrow(){
+  if(!available) throw new IllegalStateException("Book unavailable");
+  available=false;
+ }
+ public void returnCopy(){available=true;}
 }
